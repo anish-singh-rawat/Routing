@@ -5,9 +5,7 @@ import About from '../Pages/About'
 import Message from '../Pages/Message'
 import Contact from '../Pages/Contact'
 import Navbar from '../component/Navbar'
-import MessageOne from '../Pages/subMessages/MessageOne'
-import MessageTwo from '../Pages/subMessages/MessageTwo'
-import MessageThree from '../Pages/subMessages/MessageThree'
+import AllMessages from '../Pages/AllMessages'
 
 export default function Routers() {
   return (
@@ -18,9 +16,7 @@ export default function Routers() {
      <Route path="/About" element={<About/>} />
      <Route path="/Contact" element={<Contact/>} />
      <Route path="/Message" element={<Message/>} />
-     <Route path="/MessageOne" element={<MessageOne/>} />
-     <Route path="/MessageTwo" element={<MessageTwo/>} />
-     <Route path="/MessageThree" element={<MessageThree/>} />
+     <Route path="/Message/:MessageId" element={<AllMessages/>}/>
      </Routes>
     </>
   )
